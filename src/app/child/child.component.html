@@ -1,0 +1,9 @@
+<div style="border:solid; border-width:1px;">
+    <h2>Child Component</h2>
+    <form action="">
+      <input type="text" [(ngModel)]="message" name="message">
+      <button (click)="ngOnDestroy()">Abrir espaço</button>
+    </form>
+    <p>Conteúdo injetado abaixo</p>
+    <ng-content> </ng-content>
+  </div>
